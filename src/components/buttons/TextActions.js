@@ -7,7 +7,7 @@ const FontButton = styled(Button)({
     color: '#1f1f1f',
     border: '1px solid #e2e2e2',
     height: '30px',
-    margin: '5px 0 5px 10px',
+    margin: '0 10px 0 0',
     padding: '0 15px',
     background: 'transparent',
     'border-radius': '20px',

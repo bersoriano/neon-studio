@@ -24,11 +24,67 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#root {
+  animation: neonBackground 3s infinite;
+  background: linear-gradient(75deg,#afaafc 60%,#40ffa7 90%);
+}
+
+@keyframes neonBackground {
+	10%{
+    background: linear-gradient(45deg,#40ffa7 30%,#afaafc 90%); 
   }
-  to {
-    transform: rotate(360deg);
+  15%{
+    background: linear-gradient(55deg,#40ffa7 40%,#afaafc 90%);
+  }    
+	20%{
+    background: linear-gradient(65deg,#40ffa7 50%,#afaafc 90%);
   }
+  25%{
+    background: linear-gradient(75deg,#40ffa7 60%,#afaafc 90%);
+  }    
+	30%{
+    background: linear-gradient(85deg,#40ffa7 70%,#afaafc 90%);
+  }
+	35%{
+    background: linear-gradient(45deg,#afaafc 30%,#40ffa7 90%);
+  }  
+	40%{
+    background: linear-gradient(55deg,#afaafc 40%,#40ffa7 90%);      
+  }
+	45%{
+    background: linear-gradient(65deg,#afaafc 50%,#40ffa7 90%);      
+  }  
+	50%{
+    background: linear-gradient(75deg,#afaafc 60%,#40ffa7 90%);      
+  }
+	55%{
+    background: linear-gradient(85deg,#afaafc 60%,#40ffa7 90%);
+  }
+  60%{
+    background: linear-gradient(45deg,#40ffa7 30%,#afaafc 90%); 
+  }    
+	65%{
+    background: linear-gradient(55deg,#40ffa7 40%,#afaafc 90%); 
+  }
+  70%{
+    background: linear-gradient(65deg,#40ffa7 50%,#afaafc 90%); 
+  }    
+	75%{
+    background: linear-gradient(75deg,#40ffa7 60%,#afaafc 90%); 
+  }
+	80%{
+    background: linear-gradient(85deg,#40ffa7 70%,#afaafc 90%); 
+  }  
+	85%{
+    background: linear-gradient(45deg,#afaafc 30%,#40ffa7 90%);
+  }
+	90%{
+    background: linear-gradient(55deg,#afaafc 40%,#40ffa7 90%);     
+  }  
+	95%{
+    background: linear-gradient(65deg,#afaafc 50%,#40ffa7 90%);
+  } 
+	100%{
+    background: linear-gradient(75deg,#afaafc 60%,#40ffa7 90%);
+  }     
 }

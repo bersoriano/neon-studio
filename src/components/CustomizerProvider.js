@@ -7,7 +7,8 @@ class CustomizerProvider extends Component {
             userText:'Sample text',
             selectedColor: '#ff7777',
             textSize: '40',
-            fontFam: 'helvetica'
+            fontFam: 'helvetica',
+            'textRotation': '0'
         }
     }
 
@@ -47,6 +48,20 @@ class CustomizerProvider extends Component {
                         }
                         else {
                             config.textSize =  40;
+                            this.setState({config});
+                        }
+                    },
+                    textRotation: this.state.config.textRotation,
+                    updateTextRotation: () => {
+                        debugger;
+                        const config = Object.assign({},this.state.config);
+                        const rotatingText = parseInt(config.textRotation) + 30;
+                        if (rotatingText < 360) {
+                            config.textRotation = rotatingText;
+                            this.setState({config});
+                        }
+                        else {
+                            config.textRotation = 0;
                             this.setState({config});
                         }
                     },

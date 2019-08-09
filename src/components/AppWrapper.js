@@ -3,10 +3,9 @@ import styled from 'styled-components';
 
 const AppWrapper = styled.div`
     padding: 0 20px;
-    @media (min-width: 600px) {
-        max-width: 600px;
-        margin: 0 auto;
-    }
+    background-color: #24272f;
+    border-radius: 15px 15px 0 0px;
+    height: 97vh;
 `;
 
 function Wrapper (props) {

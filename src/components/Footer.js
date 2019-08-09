@@ -24,8 +24,7 @@ const PriceLabel = styled.span`
 function footer () {
     return (
         <FooterWrapper>
-            <Flexible></Flexible>
-            <OrderButton></OrderButton>
+
         </FooterWrapper>
     )
 }

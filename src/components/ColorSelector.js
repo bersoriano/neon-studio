@@ -14,6 +14,7 @@ const ColorItem = styled.div`
 
 const ColorList =  styled.div`
     display: flex;
+    margin: 15px 0 0;    
 `;
 
 function ColorWrapper (props) {

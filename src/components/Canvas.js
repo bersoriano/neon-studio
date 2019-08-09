@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import CustomizerContext from './CustomizerContext';
 
 const Canvas = styled.div`
-    background-color: #24272f;
+    background-color: transparent;
     padding: 20px;
-    min-height: 200px;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,8 @@ const NeonText = styled.span`
     color: #ffffff;
     font-family: ${props => props.fontFam};
     font-size: ${props => props.textSize}px;
-    transition: .3s;    
+    transition: .3s;
+    transform: rotate(${props => props.textRotation}deg);    
     text-shadow: 
         0 0 25px ${props => props.color}, 
         0 0 25px ${props => props.color}, 
@@ -37,6 +38,7 @@ function canvas () {
                     <Fragment>
                         <Canvas>
                             <NeonText
+                                textRotation ={context.textRotation}
                                 fontFam={context.fontFam}
                                 textSize={context.textSize} 
                                 color={context.selectedColor}>
