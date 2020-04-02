@@ -23,7 +23,7 @@ function TextEffects () {
                     <EffectsWrapper>
                         <TextActions
                             action={() => context.updateFont()} 
-                            label={context.fontFam}>
+                            label="Style">
                         </TextActions>                            
                         <TextActions 
                             action={() => context.updateTextSize()}
@@ -32,6 +32,10 @@ function TextEffects () {
                         <TextActions 
                             action={() => context.updateTextRotation()}
                             label="Rotate">
+                        </TextActions>
+                        <TextActions
+                            action={()=> context.updateBackground()}
+                            label="Bckg">
                         </TextActions>                        
                     </EffectsWrapper>                    
                 )

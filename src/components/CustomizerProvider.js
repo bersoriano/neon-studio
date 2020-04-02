@@ -7,8 +7,9 @@ class CustomizerProvider extends Component {
             userText:'Sample text',
             selectedColor: '#ff7777',
             textSize: '40',
-            fontFam: 'helvetica',
-            'textRotation': '0'
+            fontFam: `'Fredericka the Great', cursive`,
+            textRotation: '0',
+            background: '#24272f'
         }
     }
 
@@ -18,11 +19,10 @@ class CustomizerProvider extends Component {
                 value={{
                     fontFam: this.state.config.fontFam,
                     updateFont: () => {
-                        debugger;
                         const config = Object.assign({},this.state.config);
-                        config.fontFam === 'helvetica' ? 
+                        config.fontFam === `'Fredericka the Great', cursive` ? 
                         config.fontFam = 'Dancing Script': 
-                        config.fontFam = 'helvetica';
+                        config.fontFam = `'Fredericka the Great', cursive`;
                         this.setState({config});
                     },
                     userText: this.state.config.userText,
@@ -39,7 +39,6 @@ class CustomizerProvider extends Component {
                     },
                     textSize: this.state.config.textSize,
                     updateTextSize: () => {
-                        debugger;
                         const config = Object.assign({},this.state.config);
                         const biggerFont = parseInt(config.textSize) + 20;
                         if (biggerFont < 100) {
@@ -53,7 +52,6 @@ class CustomizerProvider extends Component {
                     },
                     textRotation: this.state.config.textRotation,
                     updateTextRotation: () => {
-                        debugger;
                         const config = Object.assign({},this.state.config);
                         const rotatingText = parseInt(config.textRotation) + 30;
                         if (rotatingText < 360) {
@@ -64,6 +62,19 @@ class CustomizerProvider extends Component {
                             config.textRotation = 0;
                             this.setState({config});
                         }
+                    },
+                    background: this.state.config.background,
+                    updateBackground: () => {
+                        debugger;
+                        const config = Object.assign({},this.state.config);
+                        switch(config){
+                            case config.background === '#24272f':
+                            config.background = "#f650fd"
+                            case config.background === "#f650fd":
+                            config.background = "#24272f" 
+                        }
+                        this.setState({config});
+                        console.log("Update background");
                     },
                     reset: () => {
                         this.setState(this.state.config)

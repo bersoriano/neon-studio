@@ -8,7 +8,8 @@ const CustomInput = styled(TextField)({
     padding: "10px 20px",
     "box-sizing": "border-box;",
     "border-radius": "5px;",
-    "box-shadow": "0px 0px 7px 1px #cecece;",
+    "color": "#cecece",
+    'border': '3px solid #e5e5e5',
     "margin": "15px 0 15px 0"
 });
 

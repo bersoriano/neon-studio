@@ -14,6 +14,7 @@ import TextEffects from './components/TextEffects';
 import Label from './components/Label';
 import ColorSelector from './components/ColorSelector';
 import AppWrapper from './components/AppWrapper';
+import ControlsWrapper from './components/ControlsWrapper';
 import Footer from './components/Footer';
 
 function App() {
@@ -60,9 +61,11 @@ function App() {
           <AppWrapper>
             <div className="App">
               <Preview></Preview>
-              <ColorSelector colorList= {colors}></ColorSelector>
-              <Input></Input>
-              <TextEffects></TextEffects>
+              <ControlsWrapper>
+                <ColorSelector colorList= {colors}></ColorSelector>
+                <Input></Input>
+                <TextEffects></TextEffects>
+              </ControlsWrapper>
               <Footer></Footer>
             </div> 
           </AppWrapper>         

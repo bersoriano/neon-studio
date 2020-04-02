@@ -4,15 +4,16 @@ import Button from '@material-ui/core/Button';
 
 
 const FontButton = styled(Button)({
-    color: '#1f1f1f',
-    border: '1px solid #e2e2e2',
+    color: '#efefef',
+    border: '3px solid #e5e5e5',
     height: '30px',
-    margin: '0 10px 0 0',
+    margin: '0 8px 0 0',
     padding: '0 15px',
     background: 'transparent',
     'border-radius': '20px',
     'letter-spacing': '1px',
-    'font-size': '12px'
+    'font-size': '12px',
+    margin: '0 auto'
 });
 
 export default function FontActions (props){

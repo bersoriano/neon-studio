@@ -4,17 +4,17 @@ import styled from 'styled-components';
 import CustomizerContext from './CustomizerContext';
 
 const ColorItem = styled.div`
-    min-width: 35px;
-    min-height: 35px;
+    min-width: 30px;
+    min-height: 30px;
     background-color: ${props => props.color};
     border-radius: 5px;
     margin-right: 8px;
     border: 3px solid #e5e5e5;
+    margin: 0 auto;
 `;
 
 const ColorList =  styled.div`
     display: flex;
-    margin: 15px 0 0;    
 `;
 
 function ColorWrapper (props) {
